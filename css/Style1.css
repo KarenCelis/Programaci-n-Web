@@ -7,3 +7,8 @@ div {
 table {
     background-color: aqua;
 }
+
+#myFirtsDiv {
+    color: rgba(0, 255, 55, 0.603);
+    font-weight: bold;
+}
