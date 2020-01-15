@@ -8,7 +8,25 @@ table {
     background-color: aqua;
 }
 
+
+/*id es con #*/
+
 #myFirtsDiv {
     color: rgba(0, 255, 55, 0.603);
     font-weight: bold;
+}
+
+#mySecondDiv {
+    color: rgba(0, 14, 211, 0.596);
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*clase es con . */
+
+.only_this {
+    color: hotpink;
+    font-size: 30px;
+    text-align: center;
 }
