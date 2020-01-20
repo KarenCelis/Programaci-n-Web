@@ -1,0 +1,18 @@
+#first-container {
+    /*display: table;
+    margin: 0 auto;
+    border: 1px solid black;*/
+    width: 50%;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}
+
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
