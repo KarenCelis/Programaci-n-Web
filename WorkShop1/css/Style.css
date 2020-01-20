@@ -4,15 +4,50 @@
     border: 1px solid black;*/
     width: 50%;
     margin: 0 auto;
-    background-color: cornflowerblue;
+    /*  background-color: cornflowerblue;*/
 }
 
 ul#horizontal-list {
     min-width: 696px;
     list-style: none;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 ul#horizontal-list li {
     display: inline;
+}
+
+.padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/*a las cosas con este id luego a sus contenidos para cada cosa*/
+
+#menu ul {
+    width: 100%;
+}
+
+#menu li {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    list-style: none;
+    background-color: burlywood;
+}
+
+#menu a {
+    color: black;
+    font-size: x-large;
+    /*quitar la linea de abajo*/
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* hover selector para elegir estilos personalizados cuando coloco el cursor encima*/
+
+#menu a:hover {
+    background-color: goldenrod;
 }
