@@ -1,3 +1,8 @@
+/*colocar nombres deacurdo a lo que van a hacer*/
+
+
+/*si son varias palabras colocar un - por buenas practicas color-azul*/
+
 div {
     color: darkviolet;
     font-size: 40px;
@@ -29,4 +34,8 @@ table {
     color: hotpink;
     font-size: 30px;
     text-align: center;
+}
+
+.backgroud {
+    background-color: blue;
 }
