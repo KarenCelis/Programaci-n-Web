@@ -33,13 +33,42 @@
 
         var nombre = "Karen"
         var apellido = "Celis"
-        var nombreC = "Mi nombre completo es " + nombre + " " + apellido
+        var nombreC = "<Strong> Mi nombre completo es </Strong> " + nombre + " " + apellido
+
+        document.write(nombreC)
         console.log(nombreC)
 
         var pais = "Colombia"
         var ciudad = "Bogota"
-        var nacionalidad = nombreC + " " + "Naci en " + pais + " en la ciudad de " + ciudad
+        var anoA = 2020
+        var anoN = 1999
+
+        var fecha = new Date();
+        var ano = fecha.getFullYear()
+        console.log(ano)
+
+        var nacionalidad = nombreC + " " + "Naci en " + pais + " en la ciudad de " + ciudad + " mi edad es " + (anoA - anoN)
         console.log(nacionalidad)
+
+        var n1, n2
+        n1 = 2
+        n2 = 6
+        var modulo = n1 % n2
+        console.log('El modulo es ' + modulo)
+        if (n1 % n2 == 0) {
+            console.log('Es par')
+        } else {
+            console.log('Es impar')
+        }
+        var e = 50000 + 20000 - 6000 - 15000 + 30000 - 30000
+        e = 50000
+        e += 20000
+        e -= 6000
+        e -= 15000
+        e += 30000
+        e -= 30000
+        console.log(e)
+            //50000 + 20000- 6000 - 15000+30000 -30000
     </script>
 
 </body>
