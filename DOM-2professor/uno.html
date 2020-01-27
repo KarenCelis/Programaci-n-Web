@@ -6,52 +6,41 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Review</title>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div style="background-color: rgb(198, 225, 226); border: solid 3px darkblue; padding: 20px;">
-        <div style="background-color: burlywood; width: 100px; height: 100px; 
-        border: solid 2px black;
-        padding: 10px;margin: 20px;">
+    <div class="container">
+        <div id="image">
 
             <img src="img/dog.png" width="100px" height="100px">
             <!--padding es un espacio entre el borde y el contenido, margin espacio que tiene la "caja" con otras cajas-->
         </div>
-        <div style="background-color: rgb(205, 240, 47); width: 300px; height: 300px; 
-        border: solid 2px black;
-        padding: 10px;margin: 60px;">
+        <div id="paragraph">
             <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                 <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                 specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
-        <div style="background-color: rgb(253, 193, 62); width: 600px; height: 350px; 
-        border: solid 2px black;
-        padding: 10px; margin: 80px; margin-left: 0px;">
+        <div id="video">
             <iframe class="border border-dark rounded" width="100%" height="315" src="https://www.youtube.com/embed/MgiMmR7cPfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div style="background-color: rgb(218, 124, 101); width: 150px; height: 100px; 
-        border: solid 2px black;
-        padding: 10px; margin: 80px; margin-left: 0px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div id="listoutorder">
             <ul>
                 <li><a href="#">MAIN</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
-        <div style="text-align: center; background-color: white;padding: 30px; border: double yellowgreen 7px;width: 50%; height: 60%;;">
+        <div id="link">
             <a href="https://www.tudiscovery.com/animal-planet">
                 <h3>Go to Animal Planet</h3>
             </a>
 
         </div>
-        <div style="text-align: center; padding: 20px;">
+        <div id="table">
             <table border="4" style="background-color: thistle; font-family: monospace;">
                 <thead>
                     <!--thead es el encabezado y on th se le colocan nombres a los encabezados-->
@@ -93,7 +82,7 @@
                 </tbody>
             </table>
         </div>
-        <div style="width: auto; height: auto; background-color: palegoldenrod;border: dotted 5px; margin-left: 60%">
+        <div id="listinorder">
             <ol>
                 <li><a href="#">First</a></li>
                 <li><a href="#">Second</a></li>
