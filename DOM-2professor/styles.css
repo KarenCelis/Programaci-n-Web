@@ -1,13 +1,17 @@
+div {
+    text-align: center;
+    display: inline-block;
+}
+
 .container {
     background-color: rgb(198, 225, 226);
     border: solid 3px darkblue;
-    padding: 20px;
+    padding: 10px;
+    width: 70%;
 }
 
 #image {
     background-color: burlywood;
-    width: 100px;
-    height: 100px;
     border: solid 2px black;
     padding: 10px;
     margin: 20px;
@@ -15,8 +19,6 @@
 
 #paragraph {
     background-color: rgb(205, 240, 47);
-    width: 300px;
-    height: 300px;
     border: solid 2px black;
     padding: 10px;
     margin: 60px;
@@ -24,8 +26,6 @@
 
 #video {
     background-color: rgb(253, 193, 62);
-    width: 600px;
-    height: 350px;
     border: solid 2px black;
     padding: 10px;
     margin: 80px;
@@ -34,8 +34,6 @@
 
 #listoutorder {
     background-color: rgb(218, 124, 101);
-    width: 150px;
-    height: 100px;
     border: solid 2px black;
     padding: 10px;
     margin: 80px;
@@ -48,8 +46,6 @@
     background-color: white;
     padding: 30px;
     border: double yellowgreen 7px;
-    width: 50%;
-    height: 60%
 }
 
 #table {
@@ -58,8 +54,6 @@
 }
 
 #listinorder {
-    width: auto;
-    height: auto;
     background-color: palegoldenrod;
     border: dotted 5px;
     margin-left: 60%
