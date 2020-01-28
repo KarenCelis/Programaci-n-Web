@@ -37,6 +37,8 @@ div {
 
 #header h1 {}
 
-h2 {
+h2 span {
     color: maroon;
+    border: 4px dotted darksalmon;
+    padding: 10px 40px 10px 40px
 }
