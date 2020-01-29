@@ -34,9 +34,19 @@
             <span> Paragraph</span>
         </h2>
         <p>
+            <i>
             <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
             book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            with desktop <del>publishing software</del> like Aldus PageMaker including versions of Lorem Ipsum.
+            <sub>This is an subin</sub>
+            <sup>This is a superin</sup>
+            <u>This is subrayado</u>
+            <mark>THis is resaltado</mark>
+            <abbr title="Cats Of Instagram">CI</abbr>
+            <hr>
+            <small>This is small</small>
+        <!--para tachar un texto es la etiqueta em, subindice etiqueta sub, super indice sup --> 
+        </i>
         </p>
     </div>
     <div>
@@ -46,7 +56,9 @@
         <iframe class="border border-dark rounded" width="100%" height="315" src="https://www.youtube.com/embed/MgiMmR7cPfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div>
-        <h2>List</h2>
+        <h2>
+            <span>List</span>
+        </h2>
         <ul>
             <li><a href="#">MAIN</a></li>
             <li><a href="#">ABOUT US</a></li>
@@ -66,54 +78,149 @@
         <h2>
             <span> Table</span>
         </h2>
-        <table border="4" style="background-color: thistle; font-family: monospace;width: 100%;">
+        <table>
+            <!--caption titulo de la tabla rpopio de la tabla-->
+            <caption>Me week</caption>
             <thead>
                 <!--thead es el encabezado y on th se le colocan nombres a los encabezados-->
                 <th>
-                    Name
+                    Hours
                 </th>
                 <th>
-                    Type
+                    Monday
                 </th>
                 <th>
-                    Age in human years
+                    Tuesday
                 </th>
+                <th>
+                    Wednesday
+                </th>
+                <th>
+                    Thursday
+                </th>
+                <th>
+                    Friday
+                </th>
+                <th>
+                    Saturday
+                </th>
+                <th>Sunday</th>
             </thead>
             <tbody>
                 <tr>
                     <!--fila-->
                     <td>
                         <!--Columna-->
-                        Sasha
+                        8:00- 10:00
                     </td>
-                    <td>
-                        Dog
+                    <td colspan="5" class="important">
+                        BREAKFAST
                     </td>
-                    <td>
-                        25
+
+
+                    <td rowspan="5">REST
                     </td>
+                    <td rowspan="5">HOLYDAY</td>
                 </tr>
                 <tr>
                     <td>
-                        Michin
+                        10:00-12:00
                     </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+
+                </tr>
+                <tr>
                     <td>
-                        Cat
+                        12:00-14:00
                     </td>
+                    <td class="important" colspan="5">LUNCH</td>
+
+
+
+
+                </tr>
+                <tr>
                     <td>
-                        10
+                        14:00-16:00
                     </td>
+                    <td rowspan="2">
+                        Fundamentos Web
+                    </td>
+                    <td class="important" rowspan="2">
+                        Fundamentos Web
+                    </td>
+                    <td rowspan="2"> Fundamentos Web</td>
+                    <td rowspan="2"> Fundamentos Web</td>
+                    <td rowspan="2"> Fundamentos Web</td>
+
+
+
+
+                </tr>
+                <tr>
+                    <td>
+                        16:00-18:00
+                    </td>
+
+
+
+
                 </tr>
             </tbody>
         </table>
     </div>
     <div>
-        <h2>List in order</h2>
-        <ol>
+        <h2>
+            <span>
+                List in order
+            </span>
+        </h2>
+        <!--start= " para indicar desde que numero quiero empear en una lista ordenada"-->
+        <ol type="A">
             <li><a href="#">First</a></li>
+            <ol type="i">
+                <li>unito uno</li>
+                <li>unito dos</li>
+                <li>unito three</li>
+            </ol>
             <li><a href="#">Second</a></li>
+            <ol type="I">
+                <li>second one</li>
+                <li>second two</li>
+                <li>second three</li>
+            </ol>
             <li><a href="#">Third</a></li>
         </ol>
+        <!--tipo de viñeta para la lista si no sequiere ninguno se le atribuye la propiedad -> none-->
+        <ul style="list-style-type:square;">
+            <li><a href="#">Mouse</a></li>
+            <li><a href="#">Cat</a></li>
+            <ul>
+                <li>
+                    Angora
+                </li>
+                <li>Criollo</li>
+            </ul>
+            <li><a href="#">Dog</a></li>
+            <ul>
+                <li>Boxer</li>
+                <li>Pastor aleman</li>
+                <li>Pug</li>
+            </ul>
+            <li><a href="#">Koala</a></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <h2><span>Contact</span></h2>
+        <!--target es para que se abra en otra pestaña y no dentro de la mia-->
+        <a href="https://github.com/KarenCelis" title="Bello repositorio" target="_blank"><img src="Img/github.png" alt="GitHub"></a>
+        <a href="https://www.instagram.com/aublackcats/" title="Cute Kitties" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/channel/UCuTSm59-_kap6J7Se-orUVA/videos" title="Awesome animals" target="_blank"><img src="Img/youtube.png" alt="YouTube"></a>
     </div>
 </body>
 

@@ -35,10 +35,69 @@ div {
     float: left;
 }
 
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
 #header h1 {}
 
 h2 span {
     color: maroon;
-    border: 4px dotted darksalmon;
-    padding: 10px 40px 10px 40px
+    border: 4px ridge darksalmon;
+    padding: 10px 40px 10px 40px;
 }
+
+
+/*con coma ',' se pueede hacer que diferentes etiquetas compartan el mismo estilo*/
+
+ol,
+ul {
+    text-align: left;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    background-color: thistle;
+    font-family: monospace;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+td,
+th,
+table {
+    border: 1px solid sienna;
+    vertical-align: top;
+    /*propiedad para quitar el espacio enre as lineas de a tabla*/
+    border-collapse: collapse;
+    /*esta propiedad ajusta todas las colomnas al mismo tamaño*/
+    table-layout: fixed;
+}
+
+.important {
+    background-color: gainsboro;
+    color: maroon
+}
+
+#footer img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*cuando el usuario pasa el mouse por encima*/
+
+
+/*: <- es para subclases*/
+
+#footer a:hover {
+    opacity: 0.7;
+}
+
+
+/*margin da espacion hacia afuera del contenido y paddig hacia adentro*/
+
+
+/*span elemneto de linea h2,h1,... elemento de bloque*/
