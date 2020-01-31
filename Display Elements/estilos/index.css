@@ -1,0 +1,57 @@
+div, span {
+    border: 1px solid black;
+}
+
+.contenedor {
+    min-height: 100px;
+    margin: 0 0 8px 0;
+    padding: 8px;
+}
+
+/* Estilos para visualizar un bloque */
+.margin {
+    background-color: rgba(255, 171, 92, 0.5);
+    border: none;
+    padding: 8px;
+    margin: 0px;
+}
+
+.padding {
+    background-color: rgba(157, 255, 92, 0.5);
+    padding: 8px 8px 20px 8px;;
+}
+
+.content {
+    background-color: rgba(92, 149, 255, 0.5);
+    color: black;
+    border: none;
+}
+
+/* Others Styles */
+.box {
+    margin: 8px;
+    padding: 8px 8px 20px 8px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.float {
+    float: left;
+}
+
+.vertical * {
+    vertical-align: middle;
+}

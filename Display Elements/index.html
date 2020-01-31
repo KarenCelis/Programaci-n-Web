@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+
+<body>
+    <!--generalmente el div tiene display e block y el span es inline-->
+    <div class="contenedor" style="min-height: auto; text-align: center;">
+        <div class="box" style="display: inline-block;">M</div>
+        <div class="margin inline-block">
+            <div class="padding inline-block">
+                <div class="content inline-block">
+                    M
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <h1>Veamos los diferentes display con div</h1>
+    <div class="contenedor" title="div: inline">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <div class="box inline">M</div>
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+
+    <div class="contenedor" title="div: block (default)">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <div class="box">M</div>
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+    <!--el inline block respeta el tamaño que ocupa-->
+    <div class="contenedor" title="div: inline-block">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <div class="box inline-block">M</div>
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+    <!--no se ubica donde queremos que se ubiquen se coloca en el lado donde le de cimos que este-->
+    <div class="contenedor" title="div: float left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <div class="box float">M</div>
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+
+    <hr />
+    <h1>Ahora con Span</h1>
+    <div class="contenedor" title="span: inline (default)">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <span class="box">M</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum
+    </div>
+
+    <div class="contenedor" title="span: block">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <span class="box block">M</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum
+    </div>
+
+    <div class="contenedor" title="span: inline-block">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <span class="box inline-block">M</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum
+    </div>
+
+    <div class="contenedor" title="span: float left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <span class="box float">M</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum
+    </div>
+
+    <div class="contenedor" title="div: block (default)">
+        <div class="box">M</div>
+        <div class="box">M</div>
+        <div class="box">M</div>
+        <div class="box">M</div>
+    </div>
+
+    <div class="contenedor" title="span: inline (default)">
+        Se alinea desde la base de cualquier texto
+        <span class="box">M</span>
+        <span class="box">M</span>
+        <span class="box">M</span>
+        <span class="box">M</span>
+    </div>
+
+    <div class="contenedor" title="div: inline-block">
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+    </div>
+
+    <div class="contenedor" title="span: inline-block">
+        <span class="box inline-block">M</span>
+        <span class="box inline-block">M</span>
+        <span class="box inline-block">M</span>
+        <span class="box inline-block">M</span>
+    </div>
+
+    <div class="contenedor" title="div: inline-block (diferents heights)">
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block" style="padding-bottom: 8px; padding-top: 40px;">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+    </div>
+
+    <div class="contenedor vertical" title="div: inline-block (diferents heights)">
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block" style="padding-bottom: 8px; padding-top: 40px;">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+    </div>
+
+    <div class="contenedor" title="div: margin auto">
+        <div class="box" style="margin: auto;">M</div>
+        <div class="box" style="margin: auto;">M</div>
+        <div class="box" style="margin: auto;">M</div>
+        <div class="box" style="margin: auto;">M</div>
+    </div>
+
+    <div class="contenedor" title="div: inline-block margin auto">
+        <div class="box inline-block" style="margin: auto;">M</div>
+        <div class="box inline-block" style="margin: auto;">M</div>
+        <div class="box inline-block" style="margin: auto;">M</div>
+        <div class="box inline-block" style="margin: auto;">M</div>
+    </div>
+
+    <div class="contenedor" style="text-align: center;" title="contenedor: text-align center, div: inline-block">
+        <div class="box inline-block">M</div>
+        <br>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+        <div class="box inline-block">M</div>
+    </div>
+
+    <h2>Ahora Floats</h2>
+    <div class="contenedor" title="div: float">
+        <div class="box float" style="height: 50px;">M</div>
+        <div class="box float">M</div>
+
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75);">M</div>
+
+        <div class="box float">M</div>
+        <div class="box float" style="height: 100px;">M</div>
+    </div>
+    <br><br>
+    <div class="contenedor" title="div: float">
+        <div class="box float" style="height: 50px;">M</div>
+        <div class="box float">M</div>
+
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75); height: 100px;">M</div>
+
+        <div class="box float">M</div>
+        <div class="box float" style="height: 100px;">M</div>
+    </div>
+
+    <div class="contenedor" title="div: float">
+        <div class="box float" style="height: 50px;">M</div>
+        <div class="box float">M</div>
+
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75);">M</div>
+
+        <div class="box float">M</div>
+        <div class="box float" style="height: 100px;">M</div>
+    </div>
+    <div class="contenedor" title="div: float">
+        <div class="box float" style="height: 50px;">M</div>
+        <div class="box float">M</div>
+        <!--elementos inline block se alinean a la base de ltexto-->
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75); height: 100px;">M</div>
+
+        <div class="box float">M</div>
+        <div class="box float" style="height: 100px;">M</div>
+    </div>
+    <!-- cambiar el padding a 0 -->
+    <div class="contenedor" title="Example Floats" style="padding-bottom: 25px;">
+        <div class="margin">
+            <div class="padding">
+                <div class="content">
+                    Elemento bloque normal
+                </div>
+            </div>
+        </div>
+        <div class="margin float">
+            <div class="padding">
+                <div class="content">
+                    Elemento bloque flotante
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="box" style="float:left; padding-bottom: 30px; margin: 18px 15px 0 25px; height: auto;width: auto; background-color: antiquewhite">
+            Elemento bloque flotante</div>
+        <div class="margin">
+            <div class="padding">
+                <div class="content">
+                    Elemento bloque circundante
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="margin" style="float: right; padding-top: 25px;">
+            <div class="padding">
+                <div class="content">
+                    Elemento bloque flotante
+                </div>
+            </div>
+        </div>
+        <div class="margin">
+            <div class="padding">
+                <div class="content">
+                    Elemento bloque circundante
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" style="height: 400px;" title="div: float + clear">
+        <div class="box float" style="height: 50px;">M</div>
+        <div class="box float">M</div>
+
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75);">M</div>
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75);">M</div>
+
+        <div class="box float">M</div>
+        <div class="box float" style="height: 100px;">M</div>
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75);">M</div>
+    </div>
+    <div class="contenedor" style="height: 400px;" title="div: float + clear">
+        <div class="box float" style="height: 50px;">M</div>
+        <div class="box float">M</div>
+
+        <div class="box inline-block" style="background-color: rgb(255, 75, 75);">M</div>
+        <div class="box" style="clear: left; background-color: rgb(255, 75, 75);">M</div>
+
+        <div class="box float">M</div>
+        <div class="box float" style="height: 100px;">M</div>
+        <div class="box" style="clear: left; background-color: rgb(255, 75, 75);">M</div>
+    </div>
+    <hr>
+    <h2 style="display: inline-block;">Bonus Plus:</h2>
+    <a href="positions.html">Ver Posicionamiento</a>
+</body>
+
+</html>
