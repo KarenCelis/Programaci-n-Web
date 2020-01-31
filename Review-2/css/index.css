@@ -101,3 +101,29 @@ table {
 
 
 /*span elemneto de linea h2,h1,... elemento de bloque*/
+
+
+/* Estilos del menú de navegación */
+
+#nav {
+    list-style-type: none;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    text-decoration: none;
+    display: block;
+    color: darkslategray;
+    padding: 15px;
+    font-size: 30px;
+}
+
+#nav a:hover {
+    background-color: lightslategrey;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
