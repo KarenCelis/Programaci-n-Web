@@ -11,9 +11,61 @@
 <body>
     <script>
         //plus two numbers
-        //  window.alert("Welcome to my web site");
-        var num1 = 2;
-        var num2 = " hello world";
+        /* var msm = "Hello World :) !!!"
+         alert(msm);
+         msm = 12345;
+         alert(msm)
+              window.alert("Welcome to my web site");
+        var name = prompt("Ingrese su nombre: ");
+        alert("Nice to meet you " + name);
+        result = parseInt("245") + 123;
+        alert(result);
+
+        var num1 = parseInt(prompt("Ingrese un numero: "));
+        var num2 = parseInt(prompt("Ingrese un numero"));
+        alert("EL resultado de la suma es " + (num1 + num2));
+        alert("EL resultado de la resta es " + (num1 - num2));
+        alert("EL resultado de la multiplicacion es " + (num1 * num2));
+        alert("EL resultado del modulo es " + (num1 % num2));
+
+        var base = parseInt(prompt("Ingrese la base del cuadrado"));
+        var altura = parseInt(prompt("Ingrese la altura del cuadrado"));
+
+        alert("El área del cuadrado es " + (base * altura));
+
+        var radio = parseInt(prompt("Ingrese el radio del circulo"))
+        alert("El perimetro del circulo es " + (2 * Math.PI * radio))
+       
+        var n1 = parseInt(prompt("Ingrese un numero: "));
+        if (n1 % 2 == 0) {
+            alert('Es par')
+        } else {
+            alert('Es impar')
+        }
+
+        var edad = parseInt(prompt("Ingrese su edad: "));
+        if (edad <= 10 && edad > 10) {
+            alert("Usted es un niñe")
+        } else if (edad > 10 && edad < 18) {
+            alert("Usted es un adolecente")
+        } else if (edad <= 0 || edad > 150) {
+            alert("Usted no existe :(")
+        } else {
+            alert("Usted esta grandotQ")
+        }
+         */
+
+        var n1 = parseInt(prompt("Ingrese primer numero "));
+        var n2 = parseInt(prompt("Ingrese segundo numero "));
+        var cuadrado1 = n1 * n1;
+        var cuadrado2 = n2 * n2;
+        if (cuadrado1 >= n2) {
+            alert("Modulo " + (cuadrado1 % n2))
+        } else {
+            alert("Resta " + (cuadrado2 - n1))
+        }
+
+
         var suma = num1 + num2;
         // debugger
         // debugger
@@ -50,16 +102,13 @@
         var nacionalidad = nombreC + " " + "Naci en " + pais + " en la ciudad de " + ciudad + " mi edad es " + (anoA - anoN)
         console.log(nacionalidad)
 
-        var n1, n2
-        n1 = 2
+
+
+
         n2 = 6
         var modulo = n1 % n2
         console.log('El modulo es ' + modulo)
-        if (n1 % n2 == 0) {
-            console.log('Es par')
-        } else {
-            console.log('Es impar')
-        }
+
 
         var e = 50000 + 20000 - 6000 - 15000 + 30000 - 30000
         e = 50000

@@ -2,3 +2,5 @@ ecma <- estandar de como se debe usar correctamente JavaScript
 Robustes de codigo
 No es java
 JavaScript -> se ejecuta en el navegador, programacion dentro del html, 
+palabras reservadas palabras que javaScript se reserva para operar
+&-> es comparacion a nivel de bits
