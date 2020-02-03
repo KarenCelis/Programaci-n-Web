@@ -1,0 +1,4 @@
+ecma <- estandar de como se debe usar correctamente JavaScript
+Robustes de codigo
+No es java
+JavaScript -> se ejecuta en el navegador, programacion dentro del html, 
