@@ -84,7 +84,7 @@ function mayorDeTresNum() {
 //ciclos definidos ->for,ciclos indefinidos->while
 function ciclo_for() {
     var resp = ""
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 2; i <= 20; i++) {
 
         if (i % 2 == 0) {
 
@@ -93,5 +93,37 @@ function ciclo_for() {
 
     }
     alert(resp)
+
+}
+
+function reutilizacon(aumento, limite) {
+    var resp = ""
+    for (let i = 0; i <= limite; i += aumento) {
+        resp = resp + " , " + i;
+    }
+    alert(resp)
+}
+//parametros ayudan a manejar la funcion
+
+function cicloWhile() {
+
+    while (confirm("Desea Continuar?")) {
+        alert("THis is a cycle while")
+    }
+}
+
+function cycleDoWhile() {
+    do {
+        alert("THis is a cycle Do While")
+    } while (confirm("Desea Continuar?"));
+}
+
+//Arreglo tipo de dato almacenar n cantidad de datos 
+
+function arreglos() {
+    var numeros = new Array()
+    var numeros2 = [1, 2, 4, 5, 8, 13]
+    var textos = ["hello", "world", "friends"]
+    alert(numeros2[1])
 
 }
