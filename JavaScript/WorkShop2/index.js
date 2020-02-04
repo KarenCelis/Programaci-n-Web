@@ -80,3 +80,18 @@ function mayorDeTresNum() {
         alert("el mayor de los numeros es " + v3)
     }
 }
+
+//ciclos definidos ->for,ciclos indefinidos->while
+function ciclo_for() {
+    var resp = ""
+    for (let i = 1; i <= 10; i++) {
+
+        if (i % 2 == 0) {
+
+            resp = resp + " , " + i;
+        }
+
+    }
+    alert(resp)
+
+}
