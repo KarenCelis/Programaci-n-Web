@@ -125,5 +125,16 @@ function arreglos() {
     var numeros2 = [1, 2, 4, 5, 8, 13]
     var textos = ["hello", "world", "friends"]
     alert(numeros2[1])
+    var cities = ["Barcelona", "Roma", "Cuzco", "New York", "Miami"]
+    for (let index = 0; index < cities.length; index++) {
+        const element = cities[index];
+        alert(element)
+    }
+    for (let index = 0; index < 10; index++) {
 
+        numeros[index] = index * 2;
+
+    }
+
+    alert(numeros)
 }
