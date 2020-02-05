@@ -1,0 +1,15 @@
+#container h1 {
+    /* color: saddlebrown;*/
+    text-align: center;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+#container h2 {
+    color: rgb(43, 15, 221);
+    background-color: steelblue;
+}
+
+#container p {
+    border: 3px solid black;
+}
