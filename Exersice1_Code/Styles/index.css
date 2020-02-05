@@ -13,3 +13,7 @@
 #container p {
     border: 3px solid black;
 }
+
+#container th {
+    border: 3px solid black;
+}
