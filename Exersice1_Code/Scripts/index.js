@@ -17,7 +17,7 @@ function main() {
     var cities = ["New York", "Sao Pablo", "Madrid", "Grece"]
     conteiner.innerHTML += "<ul>"
     for (let index = 0; index < cities.length; index++) {
-        conteiner.innerHTML += "<li>" + cities[index];
+        conteiner.innerHTML += "<li>" + cities[index] + "</li>";
 
 
     }
@@ -29,6 +29,14 @@ function main() {
     for (let index = 0; index < days.length; index++) {
         table += "<th>" + days[index] + " " + "</th>"
 
+    }
+    for (let index = 0; index < 8; index++) {
+        table += "<tr>"
+        for (let j = 0; j < 7; j++) {
+            table += "<td></td>"
+
+        }
+        table += "</tr>"
     }
     table += "</table>"
     conteiner.innerHTML += table;

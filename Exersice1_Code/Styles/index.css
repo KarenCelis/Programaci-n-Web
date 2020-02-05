@@ -14,6 +14,15 @@
     border: 3px solid black;
 }
 
-#container th {
-    border: 3px solid black;
+#container table {
+    border: 2px dotted black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#container th,
+tr,
+td {
+    border: 3px solid rgb(41, 131, 204);
+    padding: 4px;
 }
