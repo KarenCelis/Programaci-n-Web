@@ -15,7 +15,7 @@ function main() {
 
     conteiner.innerHTML += "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
     var cities = ["New York", "Sao Pablo", "Madrid", "Grece"]
-    conteiner.innerHTML += "<ul>"
+    conteiner.innerHTML += "<ul>";
     for (let index = 0; index < cities.length; index++) {
         conteiner.innerHTML += "<li>" + cities[index] + "</li>";
 
@@ -24,16 +24,26 @@ function main() {
     conteiner.innerHTML += "</ul>"
 
     var table = "<table>"
-    var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saurday", "Sunday"];
+    var days = ["Hours", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saurday", "Sunday"];
+    //Arreglo bidimensional o matrices
+    var content = [
+        ["7:00-9:00", "Breakfast", "Breakfast", "Breakfast", "Breakfast", "Breakfast", "Breakfast", "Breakfast"],
+        ["9:00-11:00", "Flower", "", "", "", "", "", ""],
+        ["11:00-13:00", "", "c", "", "Hello", "", "", ""],
+        ["13:00-14:00", "Lunch", "Lunch", "Lunch", "Lunch", "Lunch", "Lunch", "Lunch"],
+        ["14:00-16:00", "", "", "d", "", "", "", ""],
+        ["16:00-18:00", "", "", "", "e", "", "", "Good Night"],
+        ["18:00-20:00", "Dinner", "Dinner", "Dinner", "Dinner", "Dinner", "Dinner", "Dinner"],
 
+    ]
     for (let index = 0; index < days.length; index++) {
         table += "<th>" + days[index] + " " + "</th>"
 
     }
-    for (let index = 0; index < 8; index++) {
+    for (let i = 0; i < content.length; i++) {
         table += "<tr>"
-        for (let j = 0; j < 7; j++) {
-            table += "<td></td>"
+        for (let j = 0; j < content[i].length; j++) {
+            table += "<td>" + content[i][j] + "</td>"
 
         }
         table += "</tr>"
