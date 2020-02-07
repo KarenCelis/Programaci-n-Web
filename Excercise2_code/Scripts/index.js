@@ -170,8 +170,149 @@ function grades(num) {
 
 }
 var num
-for (let index = 0; index < 5; index++) {
-    num = parseFloat(prompt("Ingrse su calificacion"))
-    grades(num)
+    /*for (let index = 0; index < 5; index++) {
+        num = parseFloat(prompt("Ingrse su calificacion"))
+        grades(num)
+
+    }*/
+
+/*------FUNCIONES CON RETURN---------*/
+
+function is_pair(numero) {
+    if (numero % 2 == 0) {
+
+        return true
+    }
+    return false
+}
+
+function suma(num1, num2) {
+    var suma = num1 + num2
+    return suma
+}
+
+
+function calculator(num1, num2, opera) {
+
+    if (opera == '+') {
+        return num1 + num2
+    } else if (opera == '-') {
+        return num1 - num2
+    } else if (opera == '*') {
+        return num1 * num2
+    } else if (opera == '/') {
+        return num1 / num2
+    } else {
+        return 0
+    }
+
 
 }
+//case posible valor para opera-> variable a operar
+function calculator2(num1, num2, opera) {
+
+    switch (opera) {
+        case '+':
+            return num1 + num2
+            break;
+        case '-':
+            return num1 - num2
+            break;
+        case '*':
+            return num1 * num2
+            break;
+        case '/':
+            return num1 / num2
+            break;
+        default:
+            return 0
+            break;
+    }
+}
+//--------------------CADENAS DE TEXTO-----------------
+//CONCATENACION
+function exercises_text() {
+    var message = "Hello World"
+    var name = "Chimuelo"
+    console.log(message + " " + name)
+
+    var text = "78"
+    var num = 20
+    var boo = true
+
+    console.log(text + num)
+    console.log(text + boo)
+        //true = 1 false = 0
+        //number+ boolean the boolean coverts to number 
+    console.log(num + boo)
+        //la resta no esta definida para las cadenas , entonces cualqueir operacion con - que no sea numero se convierte a numero
+    console.log(text - num)
+    console.log(text - boo)
+}
+//al hacer sumas con un texto la otra variable se cambia a texto asi sea bool o numeros
+//exercises_text()
+function converter_a_number(text) {
+    //Nan-> not a number
+    if (isNaN(text)) {
+        return 0
+    } else {
+        return parseFloat(text)
+    }
+
+}
+
+function exercises_text2() {
+
+    var message = "Hello World"
+    var submessage = message.substring(0, 5)
+    console.log(submessage)
+    var messageUpp = message.toUpperCase()
+    console.log(messageUpp)
+    var messageLow = message.toLowerCase()
+    console.log(messageLow)
+    var messageCorto = message.slice(4)
+    console.log(messageCorto)
+    console.log(message.length)
+
+    messageInv = message.substr(0, message.length - 3)
+    console.log(messageInv)
+    var replace = message.replace("World", "lolo")
+    console.log(replace)
+    var arr = message.split(" ")
+    console.log(arr)
+    var arr2 = message.split("l")
+    console.log(arr2)
+
+    console.log(message.charAt(6))
+    console.log(message.indexOf('l'))
+
+}
+//exercises_text2()
+
+function exercises_text3() {
+    var message = "Hello World"
+    for (let index = 0; index < message.length; index++) {
+        console.log(message.charAt(index))
+
+    }
+
+}
+exercises_text3()
+
+function palindrome(word) {
+    word = word.replace(/ /g, "")
+    console.log(word)
+
+    for (let index = 0; index < (word.length) / 2; index++) {
+        if (word.charAt(index) != word.charAt((word.length) - 1 - index)) {
+            console.log("The word is not  palindrom")
+        } else {
+            console.log("The word is palimdrom")
+        }
+
+
+
+    }
+
+}
+palindrome("amor a roma")
