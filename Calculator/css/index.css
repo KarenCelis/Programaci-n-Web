@@ -32,6 +32,10 @@
     border-radius: 20%;
 }
 
+#calculator .buttonS {
+    border-color: yellow;
+}
+
 #calculator button:hover {
     background-color: yellowgreen;
 }
