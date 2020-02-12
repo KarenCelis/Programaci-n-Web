@@ -1,5 +1,6 @@
 var result1 = document.getElementById("result")
 var content = ""
+var ans = ""
 
 function writeC(message) {
     content += message
@@ -27,46 +28,60 @@ function deleteOne() {
 
 function calculate() {
     var contentA = content.split(" ")
-    var acum = 0;
-    var num1 = 0;
-    var operac = '';
-    var num2 = 0;
 
     if (contentA.length > 1) {
+
         var num1 = convertNUmber(contentA[0])
         var operac = contentA[1]
         var num2 = convertNUmber(contentA[2])
-        var acum = calculater(num1, num2, operac)
-        for (let i = 3; i < contentA.length - 3; i++) {
-            console.log(contentA[i] + "   cotenidpp")
-            num1 = acum
-            console.log(num1 + "aaaa")
-            operac = contentA[i + 1]
-            console.log(operac + "eee")
-            num2 = convertNUmber(contentA[i + 2])
-            console.log(num2 + "iii")
-            acum += calculater(num1, num2, operac)
-            console.log(acum + "oo")
+        if (isNaN(num1) || isNaN(num2) || num1 == "" || num2 == "") {
+
+            content = ""
+            result1.innerHTML = "ERROR"
+        } else {
+            var resultado = calculater(num1, num2, operac)
+            var aux = resultado.toFixed(5)
+
+            content = parseFloat(aux)
+            result1.innerHTML = content.toString()
         }
 
-
     }
-    content = acum.toString()
-    result1.innerHTML = content
-        /*
-            if (contentA.length > 1) {
-
-                var num1 = convertNUmber(contentA[0])
-                var operac = contentA[1]
-                var num2 = convertNUmber(contentA[2])
-                var resultado = calculater(num1, num2, operac)
-
-
-                content = resultado.toFixed(5)
-                result1.innerHTML = content
-            }*/
 
 }
+
+
+
+function convertNUmber(text) {
+    var num = parseFloat(text)
+    if (isNaN(num)) {
+        return text
+
+    } else {
+        return num
+
+    }
+}
+
+function writeOperation(message) {
+
+    calculate()
+    writeC(message)
+
+}
+
+function equal() {
+    calculate()
+    ans = content
+    content = ""
+    if (ans != "") {
+        writeC(ans)
+    }
+
+
+
+}
+
 
 function calculater(num1, num2, opera) {
 
@@ -85,19 +100,12 @@ function calculater(num1, num2, opera) {
 
             return num1 / num2
             break;
+
+        case '%':
+            return num1 % num2
+            break;
         default:
             return "NOT"
     }
 
-}
-
-function convertNUmber(text) {
-    var num = parseFloat(text)
-    if (isNaN(num)) {
-        return text
-
-    } else {
-        return num
-
-    }
 }
