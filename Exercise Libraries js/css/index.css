@@ -17,7 +17,7 @@ header h1 {
     font-family: 'Lacquer', sans-serif;
     margin-left: 25%;
     margin-right: 25%;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 #container {
