@@ -1,12 +1,38 @@
-header h2 {
-    background-color: aquamarine;
+body {
+    background-image: url("../img/fondo.jpg");
+    /*background-repeat: no-repeat no se repie la imagen */
+    background-repeat: no-repeat;
+    /*se ajusta al ancho de la pantalla*/
+    background-size: cover;
+    /*ajustar al ancho y al alto de la img*/
+    background-attachment: fixed;
+    /*font-size: 50px;*/
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+}
+
+header h1 {
+    background-color: lightyellow;
     text-align: center;
     font-family: 'Lacquer', sans-serif;
-    font-size: large;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20%;
 }
 
 #container {
     width: 100%;
+}
+
+#root {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#root p {
+    background-color: lightyellow;
+    padding: 5px;
 }
 
 .BUTTON_IQR {
@@ -23,7 +49,7 @@ header h2 {
     font-family: monospace;
     font-size: 30px;
     font-weight: 100;
-    padding: 40px;
+    padding: 15px;
     box-shadow: 1px 1px 20px 0px #000000;
     -webkit-box-shadow: 1px 1px 20px 0px #000000;
     -moz-box-shadow: 1px 1px 20px 0px #000000;
