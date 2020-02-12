@@ -107,19 +107,21 @@ function writeYear() {
 
 function writeHours() {
     var date1 = document.getElementById("output5")
-
+    var iap
     var hour = new Date().getHours()
     if (hour >= 13) {
         hour -= 12
-        hour = "Good afternoon is " + hour.toString()
+        hour = hour.toString()
+        iap = "pm"
     } else {
 
-        hour = "Good morning is " + hour.toString()
+        hour = hour.toString()
+        iap = "am"
     }
     var minute = new Date().getMinutes().toString()
     var seconds = new Date().getSeconds().toString()
 
-    date1.innerHTML = hour + " : " + minute + " : " + seconds
+    date1.innerHTML = hour + " : " + minute + " : " + seconds + " " + iap
 
 
 }
