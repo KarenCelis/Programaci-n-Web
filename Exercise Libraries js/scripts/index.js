@@ -38,11 +38,11 @@ function getDayWeek(dayw) {
 function writeDay() {
     var date1 = document.getElementById("output2")
 
-    var day = new Date().getDate().toString()
+    //   var day = new Date().getDate().toString()
     var dayw = new Date().getDay()
     var week = getDayWeek(dayw)
 
-    date1.innerHTML = "Today is " + day + " and is " + week
+    date1.innerHTML = "Today is " + new Date().getDate().toString() + " and is " + week
 }
 //mes
 function getMonth1(month) {
@@ -118,10 +118,31 @@ function writeHours() {
         hour = hour.toString()
         iap = "am"
     }
-    var minute = new Date().getMinutes().toString()
-    var seconds = new Date().getSeconds().toString()
+    // var minute = new Date().getMinutes().toString()
+    //  var seconds = new Date().getSeconds().toString()
 
-    date1.innerHTML = hour + " : " + minute + " : " + seconds + " " + iap
+    date1.innerHTML = hour + " : " + new Date().getMinutes().toString() + " : " + new Date().getSeconds().toString() + " " + iap
+
+
+}
+
+function calculateOld() {
+    var monstrarAnos = document.getElementById("output6")
+    var inputFecha = document.getElementById("dateBirthday")
+    var arr = inputFecha.value.split("-")
+    console.log(inputFecha.value.split("-"))
+    var ano = parseInt(arr[0], 10)
+    var mes = parseInt(arr[1], 10)
+    var dia = parseInt(arr[2], 10)
+    var edad
+    if (mes > new Date().getMonth() || dia > new Date().getDate()) {
+
+        edad = new Date().getFullYear() - ano - 1
+    } else {
+        edad = new Date().getFullYear() - ano
+    }
+
+    monstrarAnos.innerHTML = edad.toString()
 
 
 }

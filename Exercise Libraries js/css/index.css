@@ -24,6 +24,10 @@ header h1 {
     width: 100%;
 }
 
+#container input {
+    margin: 7px;
+}
+
 #root {
     text-align: center;
     margin-left: 25%;
