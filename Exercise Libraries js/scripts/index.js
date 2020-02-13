@@ -130,19 +130,32 @@ function calculateOld() {
     var monstrarAnos = document.getElementById("output6")
     var inputFecha = document.getElementById("dateBirthday")
     var arr = inputFecha.value.split("-")
-    console.log(inputFecha.value.split("-"))
+        //console.log(inputFecha.value.split("-"))
     var ano = parseInt(arr[0], 10)
     var mes = parseInt(arr[1], 10)
     var dia = parseInt(arr[2], 10)
     var edad
-    if (mes > new Date().getMonth() || dia > new Date().getDate()) {
-
+    if (mes > new Date().getMonth() + 1) {
         edad = new Date().getFullYear() - ano - 1
+    } else if (mes == new Date().getMonth() + 1 && dia > new Date().getDate()) {
+        edad = new Date().getFullYear() - ano - 1
+
     } else {
+
         edad = new Date().getFullYear() - ano
     }
 
     monstrarAnos.innerHTML = edad.toString()
 
+
+}
+
+function countDays() {
+    var inputDate = document.getElementById("countD")
+    var monstrarDays = document.getElementById("output7")
+    var dateBorn = new Date(inputDate.value)
+    var today1 = new Date()
+    var dif = today1 - dateBorn
+    console.log(dif / (1000 * 60 * 60 * 24 * 365))
 
 }
