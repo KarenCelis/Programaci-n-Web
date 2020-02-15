@@ -30,19 +30,37 @@ function excercise3() {
 
     var inputValue = parseFloat(input.value)
 
-    var volumenG = inputValue * inputValue * inputValue
+    var volumenG = inputValue * 3.7854118
 
-    output.innerHTML = "El volumen en litros del cubo es " + volumenG
+    output.innerHTML = "El volumen en litros es " + volumenG
 
 }
 //4. El usuario deberá ingresar una temperatura en grados centigrados (°C) y se deberá mostrar en Fahrenheit (°F)
 function excercise4() {
 
+    var input = document.getElementById("input4")
 
+    var output = document.getElementById("output4")
+
+    var inputValue = parseFloat(input.value)
+
+    var farenheitG = (inputValue * 9 / 5) + 32
+
+    output.innerHTML = "La temperatura en grados Fahrenheit es " + farenheitG
 }
 //5. El usuario deberá ingresar dos lados de un triangulo y se deberá mostrar la hipotenusa
 function excercise5() {
+    var input = document.getElementById("input5")
+    var input1 = document.getElementById("input51")
 
+    var output = document.getElementById("output5")
+
+    var c1 = parseFloat(input.value)
+    var c2 = parseFloat(input1.value)
+
+    var hipotenusa = (((c1) ** 2) + ((c2) ** 2)) ** (1 / 2)
+
+    output.innerHTML = "La hipotenusa es  " + hipotenusa
 
 }
 //6. El usuario deberá adivinar si una moneda lanzada cae Cruz o Cara (1 o 0), este valor será determinado con numeros aleatorios. y se dirá si acertó o no.
