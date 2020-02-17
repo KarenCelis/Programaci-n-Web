@@ -6,7 +6,7 @@ function excercise1() {
     var inputValue = parseFloat(input.value)
     var area = Math.PI * (inputValue) ** 2
 
-    output.innerHTML = "El área del circulo es " + area
+    output.innerHTML = "El área del circulo es: " + area
 
 }
 //2. El usuario deberá ingresar el lado de un cubo y se deberá mostrar su Volumen
@@ -16,7 +16,7 @@ function excercise2() {
     var inputValue = parseFloat(input.value)
     var volumen = inputValue * inputValue * inputValue
 
-    output.innerHTML = "El volumen del cubo es " + volumen
+    output.innerHTML = "El volumen del cubo es: " + volumen
 
 }
 //3. El usuario deberá ingresar un volumen en Galones y se deberá mostrar en Litros
@@ -26,7 +26,7 @@ function excercise3() {
     var inputValue = parseFloat(input.value)
     var volumenG = inputValue * 3.7854118
 
-    output.innerHTML = "El volumen en litros es " + volumenG
+    output.innerHTML = "El volumen en litros es: " + volumenG
 
 }
 //4. El usuario deberá ingresar una temperatura en grados centigrados (°C) y se deberá mostrar en Fahrenheit (°F)
@@ -37,7 +37,7 @@ function excercise4() {
     var inputValue = parseFloat(input.value)
     var farenheitG = (inputValue * 9 / 5) + 32
 
-    output.innerHTML = "La temperatura en grados Fahrenheit es " + farenheitG
+    output.innerHTML = "La temperatura en grados Fahrenheit es: " + farenheitG
 }
 //5. El usuario deberá ingresar dos lados de un triangulo y se deberá mostrar la hipotenusa
 function excercise5() {
@@ -50,7 +50,7 @@ function excercise5() {
 
     var hipotenusa = (((c1) ** 2) + ((c2) ** 2)) ** (1 / 2)
 
-    output.innerHTML = "La hipotenusa es  " + hipotenusa
+    output.innerHTML = "La hipotenusa es:  " + hipotenusa
 
 }
 //6. El usuario deberá adivinar si una moneda lanzada cae Cruz o Cara (1 o 0), este valor será determinado con numeros aleatorios. y se dirá si acertó o no.
@@ -62,7 +62,7 @@ function excercise6() {
     var aleatorio = Math.round(1 * Math.random())
 
     if (num1 == aleatorio) {
-        output.innerHTML = "Usted adivino"
+        output.innerHTML = "Usted adivino!! :)"
     } else {
         output.innerHTML = "Lo siento no adivino :("
     }
@@ -78,7 +78,7 @@ function excercise7() {
 
     console.log(aleatorio)
     if (num1 == aleatorio) {
-        output.innerHTML = "Usted gano"
+        output.innerHTML = "Usted gano!!! :)"
     } else {
         output.innerHTML = "Lo siento no gano :("
     }
@@ -99,7 +99,7 @@ function excercise8() {
     if (lado1 > lado2 + lado3 || lado2 > lado1 + lado3 || lado3 > lado1 + lado2) {
         output.innerHTML = "Lo siento no es un triangulo :("
     } else {
-        output.innerHTML = "Que gran triangulo"
+        output.innerHTML = "Que gran triangulo!! :0"
     }
 
 
@@ -146,9 +146,9 @@ function excercise9() {
     }
     var promedio = (num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8) / 8
 
-    output9.innerHTML = "El mayor es " + mayor.toString()
-    output91.innerHTML = "El menor es " + menor.toString()
-    output92.innerHTML = "El promedio es " + promedio.toString()
+    output9.innerHTML = "El mayor es: " + mayor.toString()
+    output91.innerHTML = "El menor es: " + menor.toString()
+    output92.innerHTML = "El promedio es: " + promedio.toString()
 }
 //10. El usuario deberá ingresar una coordenada x, y (osea, dos inputs) y se deberá mostrar la distancia hasta el origen y el ángulo con el horizonte (coordenadas polares)
 function excercise10() {
@@ -162,9 +162,9 @@ function excercise10() {
 
     var distancia = (((coorx ** 2) + (coory ** 2)) ** (1 / 2))
 
-    output.innerHTML = "La distancia del punto al origen es " + distancia.toString()
+    output.innerHTML = "La distancia del punto al origen es: " + distancia.toString()
 
-    var angulo = (Math.round((Math.atan(coory / coorx)), -2))
+    var angulo = (Math.round(359 * Math.atan(coory / coorx)))
 
 
     output1.innerHTML = "El angulo con el horizonte es: " + angulo.toString()

@@ -31,6 +31,7 @@
             
             .container h1 {
                 color: antiquewhite;
+                font-family: 'Lacquer', sans-serif;
             }
             
             .container input {
@@ -41,6 +42,8 @@
             .container p {
                 color: blanchedalmond;
                 text-align: left;
+                font-family: 'Lacquer', sans-serif;
+                margin-left: 10%;
             }
             
             .BUTTON_IQR {
