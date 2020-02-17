@@ -136,13 +136,11 @@ function excercise9() {
         if (numeros[index] > mayor) {
             mayor = numeros[index]
         }
-
     }
     for (let index = 1; index < numeros.length; index++) {
         if (numeros[index] < menor) {
             menor = numeros[index]
         }
-
     }
     var promedio = (num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8) / 8
 
@@ -154,18 +152,14 @@ function excercise9() {
 function excercise10() {
     var input = document.getElementById("input10")
     var input1 = document.getElementById("input101")
-
     var output = document.getElementById("output10")
     var output1 = document.getElementById("output101")
     var coorx = parseFloat(input.value)
     var coory = parseFloat(input1.value)
 
     var distancia = (((coorx ** 2) + (coory ** 2)) ** (1 / 2))
-
     output.innerHTML = "La distancia del punto al origen es: " + distancia.toString()
 
     var angulo = (Math.round(359 * Math.atan(coory / coorx)))
-
-
     output1.innerHTML = "El angulo con el horizonte es: " + angulo.toString()
 }
