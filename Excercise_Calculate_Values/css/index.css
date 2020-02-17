@@ -1,58 +1,59 @@
             body {
-            background-image: url("../img/fondo.jpg");
-            /*background-repeat: no-repeat no se repie la imagen */
-            background-repeat: no-repeat;
-            /*se ajusta al ancho de la pantalla*/
-            background-size: cover;
-            /*ajustar al ancho y al alto de la img*/
-            background-attachment: fixed;
-            /*font-size: 50px;*/
-            text-align: center;
-            font-family: 'IM Fell English', serif;
-        }
-        
-        header h1 {
-            background-color: black;
-            text-align: center;
-            font-family: 'Lacquer', sans-serif;
-            margin-left: 25%;
-            margin-right: 25%;
-            border-radius: 20px;
-            color: whitesmoke;
-            padding: 6px;
-        }
-        
-        .container,
-        hr {
-            margin-left: 15%;
-            margin-right: 15%;
-            background-color: black;
-        }
-        
-        .container h1 {
-            color: antiquewhite;
-        }
-        
-        .container input {
-            padding: 10px;
-            margin: 10px;
-        }
-        
-        .container p {
-            color: blanchedalmond;
-            text-align: left;
-        }
-        
-        .BUTTON_IQR {
-            background: #B7D4F5;
-            background-image: -webkit-linear-gradient(top, #B7D4F5, #1E62D0);
-            background-image: -moz-linear-gradient(top, #B7D4F5, #1E62D0);
-            background-image: -ms-linear-gradient(top, #B7D4F5, #1E62D0);
-            background-image: -o-linear-gradient(top, #B7D4F5, #1E62D0);
-            background-image: linear-gradient(to bottom, #B7D4F5, #1E62D0);
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            border-radius: 20px;
-            color: #FFFFFF;
-            font-family: monospace;
-            font-size: 30px;
+                background-image: url("../img/fondo.jpg");
+                /*background-repeat: no-repeat no se repie la imagen */
+                background-repeat: no-repeat;
+                /*se ajusta al ancho de la pantalla*/
+                background-size: cover;
+                /*ajustar al ancho y al alto de la img*/
+                background-attachment: fixed;
+                /*font-size: 50px;*/
+                text-align: center;
+                font-family: 'IM Fell English', serif;
+            }
+            
+            header h1 {
+                background-color: black;
+                text-align: center;
+                font-family: 'Lacquer', sans-serif;
+                margin-left: 25%;
+                margin-right: 25%;
+                border-radius: 20px;
+                color: whitesmoke;
+                padding: 6px;
+            }
+            
+            .container,
+            hr {
+                margin-left: 15%;
+                margin-right: 15%;
+                background-color: black;
+            }
+            
+            .container h1 {
+                color: antiquewhite;
+            }
+            
+            .container input {
+                padding: 10px;
+                margin: 10px;
+            }
+            
+            .container p {
+                color: blanchedalmond;
+                text-align: left;
+            }
+            
+            .BUTTON_IQR {
+                background: #B7D4F5;
+                background-image: -webkit-linear-gradient(top, #B7D4F5, #1E62D0);
+                background-image: -moz-linear-gradient(top, #B7D4F5, #1E62D0);
+                background-image: -ms-linear-gradient(top, #B7D4F5, #1E62D0);
+                background-image: -o-linear-gradient(top, #B7D4F5, #1E62D0);
+                background-image: linear-gradient(to bottom, #B7D4F5, #1E62D0);
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                color: #FFFFFF;
+                font-family: monospace;
+                font-size: 30px;
+            }
