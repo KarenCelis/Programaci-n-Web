@@ -69,7 +69,7 @@ console.log(persona.FechaNacimiento.getMonth())
 // -------------------------------------------------------------
 var starWars = {
     'Nombre': "Star Wars Episodio I",
-    'FechaEstreno': new Date(1977),
+    'FechaEstreno': new Date(1977, 1, 1),
     'DuracionMinutos': 120,
     'Genero': "Ciencia Ficcion",
     'Clasificacion': "A",
@@ -85,7 +85,7 @@ var starWars = {
 
 var menInBlack = {
     'Nombre': "Men in BLack",
-    'FechaEstreno': new Date(1997),
+    'FechaEstreno': new Date(1997, 1, 1),
     'DuracionMinutos': 98,
     'Genero': "Accion",
     'Clasificacion': "PG-13",
@@ -100,7 +100,7 @@ var menInBlack = {
 }
 var candelaria = {
     'Nombre': "Candelaria",
-    'FechaEstreno': new Date(2017),
+    'FechaEstreno': new Date(2017, 1, 1),
     'DuracionMinutos': 88,
     'Genero': "Cine Dramatico",
     'Clasificacion': "PG-13",
@@ -113,7 +113,7 @@ var candelaria = {
 }
 var sherk = {
     'Nombre': "Sherk",
-    'FechaEstreno': new Date(2001),
+    'FechaEstreno': new Date(2001, 1, 1),
     'DuracionMinutos': 92,
     'Genero': "Animació ",
     'Clasificacion': "PG",
@@ -129,7 +129,7 @@ var sherk = {
 }
 var harryPotter = {
     'Nombre': "Harry Potter y la Piedra Filosofal",
-    'FechaEstreno': new Date(2001),
+    'FechaEstreno': new Date(2001, 1, 1),
     'DuracionMinutos': 152,
     'Genero': "Fantasia",
     'Clasificacion': "PG",
@@ -148,7 +148,7 @@ var harryPotter = {
 
 var comoEntrenarATuDragon = {
     'Nombre': "Cómo entrenar a tu dragón",
-    'FechaEstreno': new Date(2010),
+    'FechaEstreno': new Date(2010, 1, 1),
     'DuracionMinutos': 98,
     'Genero': "Animación",
     'Clasificacion': "PG",
@@ -164,3 +164,39 @@ var comoEntrenarATuDragon = {
 
     ]
 }
+
+var peliculasCine = [
+    starWars,
+    menInBlack,
+    candelaria,
+    sherk,
+    harryPotter,
+    comoEntrenarATuDragon
+
+]
+for (let index = 0; index < peliculasCine.length; index++) {
+    console.log(peliculasCine[index].Nombre)
+
+}
+
+var vieja = peliculasCine[0].FechaEstreno.getFullYear()
+var nueva = peliculasCine[0].FechaEstreno.getFullYear()
+
+for (let index = 1; index < peliculasCine.length; index++) {
+    if (peliculasCine[index].FechaEstreno.getFullYear() < vieja) {
+        vieja = peliculasCine[index].FechaEstreno.getFullYear()
+
+    }
+
+}
+console.log(vieja.toString() + " es el año de la pelicula más vieja")
+
+for (let index = 1; index < peliculasCine.length; index++) {
+    if (peliculasCine[index].FechaEstreno.getFullYear() > nueva) {
+        nueva = peliculasCine[index].FechaEstreno.getFullYear()
+
+    }
+
+}
+
+console.log(nueva.toString() + " es el año de la pelicula más nueva")
