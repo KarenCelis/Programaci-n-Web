@@ -181,22 +181,26 @@ for (let index = 0; index < peliculasCine.length; index++) {
 
 var vieja = peliculasCine[0].FechaEstreno.getFullYear()
 var nueva = peliculasCine[0].FechaEstreno.getFullYear()
+var inicev = 0
+var indicen = 0
 
 for (let index = 1; index < peliculasCine.length; index++) {
     if (peliculasCine[index].FechaEstreno.getFullYear() < vieja) {
         vieja = peliculasCine[index].FechaEstreno.getFullYear()
+        inicev = index
 
     }
 
 }
-console.log(vieja.toString() + " es el año de la pelicula más vieja")
+console.log(peliculasCine[inicev].Nombre + " Estrenada en el año " + vieja.toString() + " es el año de la pelicula más vieja")
 
 for (let index = 1; index < peliculasCine.length; index++) {
     if (peliculasCine[index].FechaEstreno.getFullYear() > nueva) {
         nueva = peliculasCine[index].FechaEstreno.getFullYear()
 
+        inicen = index
     }
 
 }
 
-console.log(nueva.toString() + " es el año de la pelicula más nueva")
+console.log(peliculasCine[inicen].Nombre + " Estrenada en el año " + nueva.toString() + " es la pelicula más nueva")
