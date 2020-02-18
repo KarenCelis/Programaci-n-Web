@@ -22,3 +22,9 @@ todosCarros = todosCarros.sort()
 var lista = todosCarros.join("\n")
 console.log(lista)
 console.log(todosCarros.length)
+
+while (todosCarros.length > 0) {
+
+    console.log(todosCarros.pop())
+}
+console.log(todosCarros)
