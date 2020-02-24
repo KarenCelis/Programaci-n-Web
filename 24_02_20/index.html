@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="scripts/index.js"></script>
+    <div>
+        <form action="page2.html" method="POST" target="_blank">
+
+            <!--separar grupos de inputs-->
+            <fieldset>
+                <legend>Personal Data</legend>
+                <div class="field">
+                    <label>Full Name</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div class="field">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="123@correo.com">
+                </div>
+                <div class="field">
+                    <label>Phone</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div class="field">
+                    <label>Date Birth</label>
+                    <input type="date" name="dateB" id="dateB">
+                </div>
+                <div class="field">
+                    <label>Document Type</label>
+                    <select name="documentType" id="documentType">
+                        <option value="ti">Tarjeta de identidad</option>
+                        <br>
+                        <option value="cedula">Cedula</option>
+                        <br>
+                        <!--selected <-  para option un valor por defecto -->
+                        <option value="pasaporte">Pasaporte</option>
+                        <br>
+                        <option value="" selected>Slelect Option</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Document Number</label>
+                    <input type="number" name="numeroDocumento" id="numeroDocumento">
+                </div>
+                <div class="field">
+                    <label>Gender</label>
+                    <br>
+                    <br>
+
+                    <label for="">Masculino</label>
+                    <input type="radio" name="genero" id="masculino" value="Masculino">
+                    <br>
+                    <br>
+                    <label for="">Femenino</label>
+                    <input type="radio" name="genero" id="femenino" value="Femenino">
+                    <br>
+                    <br>
+                    <label for="">Otro</label>
+                    <!--checked <-  radio button o checked box tenga un valor por defecto-->
+                    <input type="radio" name="genero" id="otro" value="Otro" checked>
+                    <br>
+                    <br>
+
+                </div>
+                <div class="field">
+                    <label>Estado Civil</label>
+                    <br>
+                    <br>
+                    <label for="">Casado/a</label>
+                    <input type="radio" name="eCivil" id="casado" value="casado">
+                    <br>
+                    <br>
+                    <label for="">Soltero</label>
+                    <input type="radio" name="eCivil" id="soltero" value="soltero">
+                    <br>
+                    <br>
+                    <label for="">Otro</label>
+                    <input type="radio" name="eCivil" id="otroe" value="Otroe">
+                    <br>
+                    <br>
+                </div>
+                <div class="field">
+                    <label for="">Lenguajes de Programación</label>
+                    <br>
+                    <br>
+                    <label for="">CSS</label>
+                    <input type="checkbox" name="skills" id="css" value="css">
+                    <br>
+                    <br>
+                    <label for="">JavaScript</label>
+                    <input type="checkbox" name="skills" id="javaScript" value="JavaScript">
+                    <br>
+                    <br>
+                    <label for="">Phyton</label>
+                    <input type="checkbox" name="skills" id="python" value="Phyton">
+                    <br>
+                    <br>
+                    <label for="">C/C++</label>
+                    <input type="checkbox" name="skills" id="cc++" value="C/C++">
+                    <br>
+                    <br>
+                    <label for="">Java</label>
+                    <input type="checkbox" name="skills" id="java" value="Java">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>User Data</legend>
+                <div class="field">
+                    <label>User Name</label>
+                    <!--required <- indicar que un campo es obligaorio-->
+                    <input type="text" name="userName" id="userName" required>
+                </div>
+                <div class="field">
+                    <label>Password</label>
+
+                    <input type="password" name="password" id="passsword" required>
+                </div>
+                <div class="field">
+                    <label for="">Description</label>
+                    <br>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </div>
+                <div class="field">
+                    <label for="">Personal Page</label>
+
+                    <input type="url" name="ppage" id="ppage">
+                </div>
+            </fieldset>
+            <div class="field">
+                <!--<button>Send</button>-->
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

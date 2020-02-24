@@ -1,0 +1,20 @@
+/*Prioridad de estilos menor a mayor importancia
+  3 etiqueta->
+  2 clase->
+  1 id->
+  0 Estilo en linea*/
+
+body {
+    margin: 1%;
+}
+
+.container {
+    padding: 10px;
+    text-align: center;
+    border: 4px solid teal;
+}
+
+.dark {
+    background-color: coral;
+    color: white;
+}

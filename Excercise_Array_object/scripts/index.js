@@ -14,7 +14,7 @@ array.push("New Element")
 var elements = []
 elements.push(array.pop())
 array.concat(["Other Elemnts"])*/
-
+/*
 var carrosCaros = ["Alfa", "Porshe", "Masserati"]
 var carrosBaratos = ["Renault", "Chevrolet", "Mazda"]
 var todosCarros = carrosCaros.concat(carrosBaratos)
@@ -30,6 +30,7 @@ while (todosCarros.length > 0) {
 console.log(todosCarros)
     //(----------------------------OBJECTS------------------------------)
     //el objeto define algo
+
 var persona = {
         'Nombre': "Amaru",
         'Apellido': "Antu",
@@ -64,116 +65,11 @@ function sohwMessage() {
 }
 console.log(persona)
 console.log(persona.Apellido)
+
+
+
+//---------------------------------------------------------------
 console.log(persona.FechaNacimiento.getMonth())
-
-// -------------------------------------------------------------
-var starWars = {
-    'Nombre': "Star Wars Episodio I",
-    'FechaEstreno': new Date(1977, 1, 1),
-    'DuracionMinutos': 120,
-    'Genero': "Ciencia Ficcion",
-    'Clasificacion': "A",
-    'Nominaciones': 12,
-    'Personajes': [
-        "Dath Vader",
-        "Luke Skywalker",
-        "Leia Organa",
-        "Han Solo",
-        "Chewbaca"
-    ]
-}
-
-var menInBlack = {
-    'Nombre': "Men in BLack",
-    'FechaEstreno': new Date(1997, 1, 1),
-    'DuracionMinutos': 98,
-    'Genero': "Accion",
-    'Clasificacion': "PG-13",
-    'Nominaciones': 3,
-    'Personajes': [
-        "Agente K",
-        "Agente J",
-        "Angete L",
-        "Frak el perro"
-
-    ]
-}
-var candelaria = {
-    'Nombre': "Candelaria",
-    'FechaEstreno': new Date(2017, 1, 1),
-    'DuracionMinutos': 88,
-    'Genero': "Cine Dramatico",
-    'Clasificacion': "PG-13",
-    'Nominaciones': 10,
-    'Personajes': [
-        "Victor Hugo",
-        "Candelaria"
-
-    ]
-}
-var sherk = {
-    'Nombre': "Sherk",
-    'FechaEstreno': new Date(2001, 1, 1),
-    'DuracionMinutos': 92,
-    'Genero': "Animació ",
-    'Clasificacion': "PG",
-    'Nominaciones': 40,
-    'Personajes': [
-        "Sherk",
-        "Princesa Fiona",
-        "Burro",
-        "Lord Farquaad",
-        "Jengibre"
-
-    ]
-}
-var harryPotter = {
-    'Nombre': "Harry Potter y la Piedra Filosofal",
-    'FechaEstreno': new Date(2001, 1, 1),
-    'DuracionMinutos': 152,
-    'Genero': "Fantasia",
-    'Clasificacion': "PG",
-    'Nominaciones': 30,
-    'Personajes': [
-        "Harry Potter",
-        "Ron Weaslye",
-        "Hermione Granger",
-        "Albus Dumbledore",
-        "Rubeus Hagrid",
-        "Severus Snape",
-        "Minerva McGonagall"
-
-    ]
-}
-
-var comoEntrenarATuDragon = {
-    'Nombre': "Cómo entrenar a tu dragón",
-    'FechaEstreno': new Date(2010, 1, 1),
-    'DuracionMinutos': 98,
-    'Genero': "Animación",
-    'Clasificacion': "PG",
-    'Nominaciones': 20,
-    'Personajes': [
-        "Stoick",
-        "Hipo",
-        "Gobber",
-        "Astrid",
-        "Chimuelo",
-        "Brutilda Torton",
-        "Brutacio Torton"
-
-    ]
-}
-
-var peliculasCine = [
-    starWars,
-    menInBlack,
-    candelaria,
-    sherk,
-    harryPotter,
-    comoEntrenarATuDragon
-
-]
 for (let index = 0; index < peliculasCine.length; index++) {
     console.log(peliculasCine[index].Nombre)
 
@@ -204,3 +100,53 @@ for (let index = 1; index < peliculasCine.length; index++) {
 }
 
 console.log(peliculasCine[inicen].Nombre + " Estrenada en el año " + nueva.toString() + " es la pelicula más nueva")
+
+*/
+
+//----------------------------------------------------------------
+
+var root = document.getElementById("root")
+    /*
+    root.style.height = "100px"
+    root.style.backgroundColor = "blue"
+    root.style.border = "5px solid yellow"
+    root.style.borderRadius = "20px"
+        //root.style se cambian todos los elemntos de estilo del div o el contenido
+
+    //un elemneto puede tener mas d e una clase
+
+    console.log(root.classList)*/
+function darkMode() {
+    if (root.className.indexOf("dark") == -1) {
+        root.classList.add("dark")
+    } else {
+        root.classList.remove("dark")
+    }
+
+    console.log(root.classList)
+    console.log(root.className)
+}
+//crear elementos en la pag
+var salto = document.createElement("br")
+var salto1 = document.createElement("br")
+root.appendChild(salto)
+
+var hipervinculo = document.createElement("a")
+hipervinculo.href = "https://www.facebook.com/"
+hipervinculo.innerText = "Go to FACE"
+root.appendChild(hipervinculo)
+
+root.appendChild(salto1)
+
+var img1 = document.createElement("img")
+img1.src = "img/img1.jpg"
+img1.alt = "TOkio"
+img1.style.width = "180px"
+root.appendChild(img1)
+root.appendChild(salto)
+
+var img2 = document.createElement("img")
+img2.src = "https://www.bthetravelbrand.com/dondear/wp-content/uploads/2016/04/Japon_General_Sean-Pavone.jpg"
+img2.alt = "JApón"
+img2.style.width = "150px"
+root.appendChild(img2)
