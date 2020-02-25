@@ -79,3 +79,22 @@ input[type="reset"] {
     padding: 5px;
     background-color: rgb(65, 31, 129);
 }
+
+textarea {
+    resize: none;
+}
+
+
+/*Estilos a las pseudoclases*/
+
+input:required {
+    border: 3px solid springgreen;
+}
+
+input:optional {
+    border: 3px solid rgb(200, 255, 0);
+}
+
+input[type="radio"]:checked {
+    margin-left: 10px;
+}
