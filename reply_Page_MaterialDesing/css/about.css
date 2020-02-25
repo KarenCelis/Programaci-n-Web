@@ -1,0 +1,45 @@
+header {
+    background-color: black;
+    height: 280px;
+}
+
+header img {
+    height: 60px;
+}
+
+#imgHeader {
+    text-align: center;
+    height: 70%;
+    padding: 8%;
+}
+
+#desc {
+    padding: 35px;
+    background-color: rgb(224, 224, 224);
+}
+
+#desc a {
+    text-decoration: none;
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+#template {
+    height: 420px;
+    background-color: #B3E0E1;
+    padding: 40px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-image: url("https://getmdl.io/assets/templates_mo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#template:hover {
+    background-image: url("https://getmdl.io/assets/templates.svg");
+}

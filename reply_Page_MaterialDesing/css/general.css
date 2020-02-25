@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif!important;
+    font-size: 13px;
+    margin: 0px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+}
+
+nav {}
+
+header {
+    background-image: url("https://getmdl.io/assets/header.jpg");
+    /* background-color: black;
+   height: 196px;*/
+    background-size: cover;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.pageSelected {
+    color: white;
+    border-bottom: 3px solid cyan;
+}
