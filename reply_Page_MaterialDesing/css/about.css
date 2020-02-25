@@ -37,9 +37,112 @@ header img {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #template:hover {
     background-image: url("https://getmdl.io/assets/templates.svg");
+}
+
+#doubleContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#components {
+    min-width: 200px;
+    height: 420px;
+    background-color: #E90974;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    background-image: url("https://getmdl.io/assets/components.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#components:hover {
+    background-image: url("https://getmdl.io/assets/components_mo.svg");
+}
+
+#styles {
+    min-width: 200px;
+    height: 420px;
+    background-color: #8F4099;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    background-image: url("https://getmdl.io/assets/styles.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#styles:hover {
+    background-image: url("https://getmdl.io/assets/styles_mo.svg");
+}
+
+#customize {
+    min-width: 200px;
+    height: 420px;
+    background-color: #191E80;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    background-image: url("https://getmdl.io/assets/customize.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#customize:hover {
+    background-image: url("https://getmdl.io/assets/customize_mo.svg");
+}
+
+#down {
+    background-color: #424242;
+    height: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#down a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(158, 152, 152);
+    padding: 6px;
+    padding-top: 80px;
 }
