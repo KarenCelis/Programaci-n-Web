@@ -1,3 +1,4 @@
+/*
 //array.sort()->muestra un arreglo de menor a mayor
 //array.reverse()->muestra el arreglo de mayor a menor
 //array.join()-> une todos los elementos del arregloen una sola cadena de texto, se puede colocar un separador ("-")
@@ -105,8 +106,7 @@ console.log(peliculasCine[inicen].Nombre + " Estrenada en el año " + nueva.toSt
 
 //----------------------------------------------------------------
 
-var root = document.getElementById("root")
-    /*
+/*
     root.style.height = "100px"
     root.style.backgroundColor = "blue"
     root.style.border = "5px solid yellow"
@@ -115,7 +115,7 @@ var root = document.getElementById("root")
 
     //un elemneto puede tener mas d e una clase
 
-    console.log(root.classList)*/
+    console.log(root.classList)
 function darkMode() {
     if (root.className.indexOf("dark") == -1) {
         root.classList.add("dark")
@@ -149,4 +149,59 @@ var img2 = document.createElement("img")
 img2.src = "https://www.bthetravelbrand.com/dondear/wp-content/uploads/2016/04/Japon_General_Sean-Pavone.jpg"
 img2.alt = "JApón"
 img2.style.width = "150px"
-root.appendChild(img2)
+root.appendChild(img2)*/
+
+
+//--------------------------MOVIES----------------------------
+var root = document.getElementById("root")
+
+for (let index = 0; index < peliculasCine.length; index++) {
+    var tarjet = document.createElement("div")
+    tarjet.classList.add("tarjetClass")
+
+    var coverPage = document.createElement("img")
+    coverPage.src = peliculasCine[index].Imagen
+
+    var title = document.createElement("h3")
+    title.innerText = peliculasCine[index].Nombre
+
+    var content = document.createElement("div")
+    content.classList.add("hidden")
+
+    var dateLan = document.createElement("p")
+    var m = moment(peliculasCine[index].FechaEstreno).locale("es")
+
+    dateLan.innerText = "Año de lanzamiento: " + m.format("LL")
+
+    var duration = document.createElement("p")
+    duration.innerHTML = "Duracion: " + peliculasCine[index].DuracionMinutos + " minutos"
+
+    var gender = document.createElement("p")
+    gender.innerHTML = "Genero: " + peliculasCine[index].Genero
+
+    var clasification = document.createElement("p")
+    clasification.innerHTML = "Clasificacion: " + peliculasCine[index].Clasificacion
+
+    var nominations = document.createElement("p")
+    nominations.innerHTML = "Nominaciones: " + peliculasCine[index].Nominaciones
+
+    var listCharacters = document.createElement("ul")
+    for (let j = 0; j < peliculasCine[index].Personajes.length; j++) {
+        var item = document.createElement("li")
+        item.innerText = peliculasCine[index].Personajes[j];
+        listCharacters.appendChild(item)
+    }
+    content.appendChild(dateLan)
+    content.appendChild(listCharacters)
+    content.appendChild(duration)
+    content.appendChild(gender)
+    content.appendChild(clasification)
+    content.appendChild(nominations)
+
+    tarjet.appendChild(coverPage)
+    tarjet.appendChild(title)
+    tarjet.appendChild(content)
+    tarjet.appendChild(content)
+
+    root.appendChild(tarjet)
+}

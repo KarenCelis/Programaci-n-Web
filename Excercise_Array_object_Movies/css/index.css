@@ -5,16 +5,67 @@
   0 Estilo en linea*/
 
 body {
-    margin: 1%;
+    margin: 0px;
+    font-family: 'Krona One';
 }
 
-.container {
+header {
     padding: 10px;
     text-align: center;
-    border: 4px solid teal;
+    background-color: black;
+    color: white;
 }
 
-.dark {
-    background-color: coral;
+footer {
+    padding: 10px 0px;
+    text-align: center;
+    background-color: black;
     color: white;
+    margin: 0px;
+}
+
+#root {
+    background-color: rgb(216, 216, 216);
+    min-height: 500px;
+    padding: 25PX;
+    text-align: center;
+}
+
+#root .tarjetClass {
+    vertical-align: top;
+}
+
+.tarjetClass {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 13px 10px 6px -4px rgba(0, 0, 0, 1);
+    width: 150px;
+    text-align: center;
+    min-height: 375px;
+    width: 300px;
+}
+
+.tarjetClass img {
+    width: 120px;
+    box-shadow: 0px 16px 10px -8px rgba(0, 0, 0, 0.75);
+}
+
+.tarjetClass h3 {
+    text-transform: uppercase;
+}
+
+.hidden {
+    /* display: none;*/
+    height: 0px;
+    visibility: hidden;
+    transition: height 2s;
+}
+
+.tarjetClass:hover .hidden {
+    /*  display: inline-block;*/
+    height: auto;
+    visibility: visible;
 }
