@@ -12,7 +12,7 @@
 <body>
     <script src="scripts/index.js"></script>
     <div>
-        <form action="page2.html" method="POST" target="_blank">
+        <form action="page2.html" method="POST" target="_blank" onsubmit="return validarFormulario()">
 
             <!--separar grupos de inputs-->
             <fieldset>
@@ -133,6 +133,21 @@
                     <label for="">Personal Page</label>
 
                     <input type="url" name="ppage" id="ppage">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Another Inputs</legend>
+                <div class="field">
+                    <label for="">Range</label>
+                    <input type="range" name="" id="tamanoL" min="0" max="100" step="7" onchange="cambiarTamanoLetra()">
+                </div>
+                <div class="field">
+                    <label for="">Color</label>
+                    <input type="color" name="" id="colorFondo" onchange="cambiarFondo()">
+                </div>
+                <div class="field">
+                    <label for="">File</label>
+                    <input type="file" name="" id="">
                 </div>
             </fieldset>
             <div class="field">
