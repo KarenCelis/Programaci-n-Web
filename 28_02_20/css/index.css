@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+
+header,
+footer {
+    border: 3px double;
+}
+
+div {
+    padding: 7px;
+}
+
+.titulo {
+    background-color: rgb(107, 196, 89);
+}
+
+.principal {
+    border: 3px double;
+    margin: auto;
+    min-height: 1000px;
+    width: 900px;
+}
+
+.contenido {
+    background-color: cornflowerblue;
+}
