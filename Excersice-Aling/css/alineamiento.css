@@ -1,0 +1,48 @@
+    .twoElements {
+        background-color: darkkhaki;
+    }
+    
+    .twoElements .contenido {
+        box-sizing: border-box;
+        width: 49%;
+    }
+    
+    .masGrande {
+        height: 300px;
+    }
+    
+    .top .contenido {
+        vertical-align: top;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .flex-top {
+        align-items: flex-start;
+    }
+    
+    .middle .contenido {
+        vertical-align: middle;
+    }
+    
+    .center {
+        align-items: center;
+    }
+    
+    .bottom .contenido {
+        vertical-align: bottom;
+    }
+    
+    .flex-end {
+        align-items: flex-end;
+    }
+    
+    .mediano {
+        height: 100%;
+    }
+    
+    .flex-text-center {
+        justify-content: center;
+    }
