@@ -1,7 +1,159 @@
+body {
+    margin: 0px;
+}
+
 .lista {
     text-decoration: none;
 }
 
 ul {
     list-style: none;
+}
+
+.desc {
+    list-style: circle;
+}
+
+a {
+    padding-right: 5px;
+}
+
+header,
+footer {
+    border: 3px solid black;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header #titulo1 {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+header #barraNavegacion {
+    text-align: right;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#principal {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+#principal #Uno {
+    height: 30%;
+    box-sizing: border-box;
+}
+
+#principal #Dos {
+    height: 70%;
+    box-sizing: border-box;
+}
+
+#Uno #imagenUno {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#Uno #listaUno {
+    padding: 6px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+@supports(object-fit: cover) {
+    #imagenUno #imgLion1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+div {
+    border: 2px solid black;
+}
+
+#tituloDos,
+#listaDos {
+    width: 20%;
+    flex: 1;
+}
+
+#DosDos {
+    width: 60%;
+    flex: 1;
+}
+
+#imagenDos {
+    height: 50%;
+}
+
+@supports(object-fit: cover) {
+    #imagenDos #imgLion2 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.red .redI {
+    height: 50px;
+    width: 70px;
+    object-position: center center;
+}
+
+#tabla {
+    height: 50%;
+}
+
+#tituloDos {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 100%;
+}
+
+#info,
+#redes {
+    width: 50%;
+}
+
+.red {
+    width: 33%;
+}
+
+.center {
+    align-items: center;
+}
+
+
+/* Pantallas con un ancho MENOR e IGUAL a 600px */
+
+@media screen and (max-width: 600px) {
+    header #titulo1 {
+        width: 100%;
+    }
+    header #barraNavegacion {
+        width: 100%;
+    }
+    #Uno #imagenUno,
+    #listaUno {
+        width: 100%;
+    }
+    #principal #Uno {
+        height: 100%;
+    }
 }
