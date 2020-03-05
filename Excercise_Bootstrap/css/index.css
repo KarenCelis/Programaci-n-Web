@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+}
+
+header,
+footer {
+    border: 2px dotted;
+}
+
+.titulo {
+    padding: 8px;
+    background-color: darkkhaki;
+}
+
+section {
+    padding: 5px;
+}
+
+.miContenido {
+    border: solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: lightblue;
+}
+
+img {
+    width: 100%;
+    padding: 5%;
+}

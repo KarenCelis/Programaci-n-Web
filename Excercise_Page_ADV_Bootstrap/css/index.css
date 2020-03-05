@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+.contenido {
+    border: solid;
+    box-sizing: border-box;
+    padding: 3px;
+    background-color: lightblue;
+    margin: 7px;
+    border-radius: 15px;
+}
+
+.container {
+    background-color: darkkhaki;
+}
+
+img {
+    width: 100%;
+    padding: 3%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 100%;
+}

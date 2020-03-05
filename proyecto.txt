@@ -1,0 +1,9 @@
+d-flex
+justify-content
+align-items
+
+
+formulario registro,login
+validaciones en el formulario
+la persona no sea menor de edad 
+solo cuando me logue manda a la pag principal -> home,seccion de productos, queines somos, contctanos(boottrap)
