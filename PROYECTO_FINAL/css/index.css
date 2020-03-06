@@ -14,3 +14,7 @@ body {
     margin: 4px;
     text-align: center;
 }
+
+legend {
+    text-align: center;
+}

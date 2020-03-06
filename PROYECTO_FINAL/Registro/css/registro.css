@@ -4,3 +4,8 @@ header {
     height: 50px;
     color: white;
 }
+
+form {
+    margin: auto;
+    padding: 10px;
+}
