@@ -19,17 +19,22 @@
     <header>
         <h1>INICIAR SESION</h1>
     </header>
-    <main>
-        <div id="container">
-            <form action="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSXtpIqbNzbF4fbDPpP3fKJ93AOXZJQ4fETFXls8eVOYAAHaQ1O"><br>
-                <input type="text" value=""><br>
-                <input type="password"><br>
-                <input type="submit" value="SIGN IN"><br>
-                <span><a href="#">Password?</a></span>
+    <div class="container">
+
+        <div class="row">
+            <form action="../Pagina_Principal/pagina_principal.html" method="GET" onsubmit="return validarInicio()" name="inicioS">
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="micorreo@correo.com" required name="email">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Contraseña</label>
+                    <input type="password" class="form-control" id="formGroupExampleInput" placeholder="Asunto" required name="contrasena">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Iniciar</button>
             </form>
         </div>
-    </main>
+    </div>
     <footer>
         <div class="jumbotron jumbotron-fluid py-1 text-white mb-0 contactenos">
             <div class="container-fluid">
