@@ -1,0 +1,27 @@
+header {
+    text-align: center;
+    background-color: rgb(65, 134, 134);
+    height: 50px;
+    color: white;
+    width: 100%;
+}
+
+.row form {
+    margin-left: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.651);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 600px;
+    border-radius: 20px;
+}
+
+body {
+    background: url('https://therescued.org/wp-content/uploads/2019/11/heinz-57-dog-greater-swiss-mountain-dog-rescue-cat-wallpaper-76-4.jpg');
+    background-repeat: no-repeat;
+    /*se ajusta al ancho de la pantalla*/
+    /*ajustar al ancho y al alto de la img*/
+    background-attachment: fixed;
+    /*font-size: 50px;*/
+    background-size: cover;
+}
