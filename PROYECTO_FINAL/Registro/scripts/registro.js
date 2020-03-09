@@ -25,7 +25,7 @@ function validar_contrasena(contrasena) {
 }
 
 function validarRegistro() {
-    //debugger
+    debugger
     // otra forma de obtener los valores de un input de un formulario es con 
     // document.forms, le indicamos el nombre de nuestro formulario y luego el nombre del input
     // document.forms["formName"]["inputName"]
@@ -78,10 +78,11 @@ function validarRegistro() {
             'contrasena': contrasena
 
         }
-
-        var contra = validar_contrasena(contrasena)
+        console.log(contrasena)
+            //var contra = validar_contrasena(String(contrasena))
+            // console.log(contra)
             // Aqui van las VALIDACIONES
-        if (contrasena != contrasenaR || contra == false) {
+        if (contrasena != contrasenaR) {
 
             return false;
         } else {
@@ -101,8 +102,11 @@ function validarRegistro() {
 
 
 
+    } else {
+
+        return false
+
     }
 
-    return false
 
 }
