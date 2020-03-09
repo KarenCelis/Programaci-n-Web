@@ -26,11 +26,12 @@ h5 {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     font-weight: 700;
+    border-radius: 20px;
 }
 
 .myButton:hover {
     background-color: rgba(0, 0, 0, 0);
-    color: #0493bd;
+    color: #64686b;
 }
 
 .myButton:active {
