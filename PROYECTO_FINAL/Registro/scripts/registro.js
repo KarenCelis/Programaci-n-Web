@@ -1,17 +1,17 @@
 function validar_contrasena(contrasena) {
-    console.log(contrasena)
-    if (contrasenna.length >= 8) {
+
+    if (contrasena.length >= 8) {
         var mayuscula = false;
         var minuscula = false;
         var numero = false;
         var caracter_raro = false;
 
-        for (var i = 0; i < contrasenna.length; i++) {
-            if (contrasenna.charCodeAt(i) >= 65 && contrasenna.charCodeAt(i) <= 90) {
+        for (var i = 0; i < contrasena.length; i++) {
+            if (contrasena.charCodeAt(i) >= 65 && contrasena.charCodeAt(i) <= 90) {
                 mayuscula = true;
-            } else if (contrasenna.charCodeAt(i) >= 97 && contrasenna.charCodeAt(i) <= 122) {
+            } else if (contrasena.charCodeAt(i) >= 97 && contrasena.charCodeAt(i) <= 122) {
                 minuscula = true;
-            } else if (contrasenna.charCodeAt(i) >= 48 && contrasenna.charCodeAt(i) <= 57) {
+            } else if (contrasena.charCodeAt(i) >= 48 && contrasena.charCodeAt(i) <= 57) {
                 numero = true;
             } else {
                 caracter_raro = true;
@@ -32,12 +32,12 @@ function validarRegistro() {
     var nombreC = document.forms["registro"]["nombresCompletos"].value
     var tipoDocumento = document.forms["registro"]["tipoDocumento"].value
         // alert(tipoDocumento)
-    var numDocumento = document.forms["registro"]["numeroDocumento"]
+    var numDocumento = document.forms["registro"]["numeroDocumento"].value
     var genero = document.forms["registro"]["genero"].value
         // alert(genero)
-    var fechaNacimiento = document.forms["registro"]["fechaNacimiento"]
-    var telefonoCelular = document.forms["registro"]["telefonoCelular"]
-    var telefonoFijo = document.forms["registro"]["telefonoFijo"]
+    var fechaNacimiento = document.forms["registro"]["fechaNacimiento"].value
+    var telefonoCelular = document.forms["registro"]["telefonoCelular"].value
+    var telefonoFijo = document.forms["registro"]["telefonoFijo"].value
     var correo = document.forms["registro"]["email"].value
     var contrasena = document.forms["registro"]["contrasena"].value
     var contrasenaR = document.forms["registro"]["contrasenaR"].value
@@ -78,11 +78,11 @@ function validarRegistro() {
             'contrasena': contrasena
 
         }
-        console.log(contrasena)
-            //var contra = validar_contrasena(String(contrasena))
-            // console.log(contra)
-            // Aqui van las VALIDACIONES
-        if (contrasena != contrasenaR) {
+
+
+        // Aqui van las VALIDACIONES
+        var contr = validar_contrasena(contrasena)
+        if (contrasena != contrasenaR || contr == false || isCheck == false) {
 
             return false;
         } else {

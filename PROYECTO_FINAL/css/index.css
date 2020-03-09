@@ -4,6 +4,14 @@ body {
     background-color: rgb(240, 240, 210);
 }
 
+header {
+    text-align: center;
+    background-color: rgb(65, 134, 134);
+    height: 50px;
+    color: white;
+    width: 100%;
+}
+
 .contactenos {
     background-color: rgb(161, 175, 98);
 }
