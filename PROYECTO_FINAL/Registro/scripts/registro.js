@@ -85,6 +85,7 @@ function validarRegistro() {
         if (contrasena != contrasenaR || contr == false || isCheck == false) {
 
             return false;
+            alert("Inconsistencia en el ingreso de los datos")
         } else {
 
             /**
@@ -105,6 +106,7 @@ function validarRegistro() {
     } else {
 
         return false
+        alert("Este usuario ya se encuentra en nuestro sistema")
 
     }
 
