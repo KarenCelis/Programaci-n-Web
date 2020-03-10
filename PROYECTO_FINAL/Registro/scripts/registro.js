@@ -83,9 +83,9 @@ function validarRegistro() {
         // Aqui van las VALIDACIONES
         var contr = validar_contrasena(contrasena)
         if (contrasena != contrasenaR || contr == false || isCheck == false) {
-
-            return false;
             alert("Inconsistencia en el ingreso de los datos")
+            return false;
+
         } else {
 
             /**
@@ -104,9 +104,9 @@ function validarRegistro() {
 
 
     } else {
-
-        return false
         alert("Este usuario ya se encuentra en nuestro sistema")
+        return false
+
 
     }
 

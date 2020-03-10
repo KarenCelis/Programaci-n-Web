@@ -20,7 +20,9 @@ function validarInicio() {
         if (usuario.contrasena == contrasena) {
             return true
         } else {
+            alert("Usuario o Cantraseña Incorrecto")
             return false;
+
         }
     }
 }
